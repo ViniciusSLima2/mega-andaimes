@@ -1,0 +1,44 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FFF;
+    width: fit-content;
+    padding: 20px;
+    transition: transform 0.2s ease;
+    & .text-contact-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .item-name{
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    & .wpp-icon-link{
+        border-radius: 50%;
+        background-color: #34af23;
+        display: block;
+        padding: 5px;
+        width: 47px;
+        height: 47px;
+        position: relative;
+
+        .img{
+            filter: brightness(0) invert(1);
+            position: absolute;
+            top: 11px;
+            left: 11px;
+        }
+    }
+
+
+}
+
+.card-container:hover{
+        transform: scale(1.1);
+        transform-origin: center;
+}

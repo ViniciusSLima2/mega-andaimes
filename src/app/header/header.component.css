@@ -2,11 +2,15 @@
     padding: 20px;
     display: flex;
     justify-content: center;
+    width: 100%;
     align-items: center;
     -webkit-box-shadow: 0px 4px 4px -4px rgba(194,192,194,1);
     -moz-box-shadow: 0px 4px 4px -4px rgba(194,192,194,1);
     box-shadow: 0px 4px 4px -4px rgba(194,192,194,1);
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #FFF;
     & img {
         position: absolute;
         top: 13px;
@@ -17,7 +21,6 @@
         display: flex;
         gap: 10px;
         list-style: none;
-
         .link a {
             text-decoration: none;
             color: #000;
@@ -95,17 +98,19 @@
             width: 100%;
             transition: height .5s ease;
             position: absolute;
-            top: 44px;
+            top: 43px;
             background-color: #ffde59;
             flex-direction: column;
             align-items: center;
             .link:nth-child(1){
                 padding-top: 10px;
             }
+            z-index: 999;
         }
 
         & .link-wrapper.enabled{
             height: 100vh;
+
         }
 
 

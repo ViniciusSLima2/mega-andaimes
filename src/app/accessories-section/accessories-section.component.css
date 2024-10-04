@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    background-color: aliceblue;
+    & .title{
+        font-size: 64px;
+    }
+    & .acc-container{
+        display: flex;
+        gap: 10px;
+    }
+}

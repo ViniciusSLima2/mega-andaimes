@@ -1,0 +1,22 @@
+<div class="card-container" [ngClass]="{'inverted' : inverted}">
+
+    <div class="text-container">
+        <h4 class="item-name">{{itemName}}</h4>
+        <h5 class="item-description">{{itemDescription}}</h5>
+        <div class="advantages-container">
+            <p class="title">{{advantageTitle}}</p>
+    
+            <ul class="advantages-items">
+                @for (item of advantagesItems; track item.title){
+                    <li class="advantage-item"><span>{{item.title}}</span>: {{item.description}}</li>
+                }
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div class="img-container">
+        <img [ngSrc]="itemImg" [alt]="itemImgAlt" fill class="item-img">
+    </div>
+</div>

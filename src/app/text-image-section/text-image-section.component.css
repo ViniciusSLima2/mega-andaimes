@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 60px;
+    width: 100%;
+    position: relative;
+    background-color: #3d3d3d;
+    & .title{
+        font-size: 64px;
+        color: #FFF;
+    }
+
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        gap: 20px;
+        padding: 40px 20px;
+        & .title{
+            font-size: 44px;  
+        }
+          
+    }
+}

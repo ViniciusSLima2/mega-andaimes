@@ -1,0 +1,25 @@
+.product-list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 40px;
+    background-color: rgba(255, 222, 89, 0.3);
+    & .title{
+        font-size: 34px;
+        color: #000;
+        font-weight: 500;
+    }
+
+    & .product-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px){
+    .product-list-container{
+        padding: 40px 20px;
+    }
+}
